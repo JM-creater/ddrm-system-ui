@@ -1,0 +1,157 @@
+/* Shared UI component styles */
+.page-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.page-head h1 {
+  font-size: 1.12rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.page-head h1 .ico {
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+.page-head p {
+  margin: 4px 0 0;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.page-head .actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding-top: 2px;
+}
+
+.panel {
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+
+.panel.h-100 {
+  margin-bottom: 0;
+}
+
+.panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 16px 16px 4px;
+}
+
+.panel-head h2 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.panel-body {
+  padding: 12px 16px 16px;
+}
+
+.panel-foot {
+  padding: 10px 16px;
+  border-top: 1px solid var(--line-soft);
+  background: #fbfcfe;
+}
+
+.panel .table-responsive {
+  margin: 0;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 36px 12px;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.loading .spinner-border {
+  color: var(--blue);
+}
+
+.empty {
+  text-align: center;
+  padding: 32px 16px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  background: #fff;
+  border-radius: 12px;
+}
+
+.panel .empty {
+  background: transparent;
+}
+
+.empty .t {
+  font-weight: 700;
+  color: var(--ink);
+  font-size: 0.875rem;
+  margin-bottom: 4px;
+}
+
+.stat {
+  background: #fff;
+  border-radius: 10px;
+  border-top: 3px solid var(--chart-blue);
+  box-shadow: var(--shadow);
+  padding: 18px 13px 16px;
+  height: 100%;
+}
+
+.stat.tone-blue {
+  border-top-color: #1559a6;
+}
+.stat.tone-yellow {
+  border-top-color: #e6c229;
+}
+.stat.tone-orange {
+  border-top-color: #e8a33a;
+}
+.stat.tone-red {
+  border-top-color: #dc3b3b;
+}
+.stat.tone-green {
+  border-top-color: #2fae63;
+}
+
+.stat .label {
+  font-size: 0.69rem;
+  font-weight: 600;
+  color: var(--ink-2);
+}
+
+.stat .value {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--chart-blue);
+  line-height: 1.2;
+  margin-top: 6px;
+  font-variant-numeric: tabular-nums;
+}
+
+.stat .note {
+  font-size: 0.66rem;
+  color: var(--muted);
+  margin-top: 6px;
+}

@@ -1,0 +1,64 @@
+.choice-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 8px;
+}
+
+.choice {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.choice input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.choice:hover {
+  border-color: #b9c6d8;
+}
+
+.choice.on {
+  border-color: var(--blue);
+  background: var(--blue-soft);
+  color: #0d4c8a;
+}
+
+.choice:has(input:focus-visible) {
+  outline: 2px solid var(--blue);
+  outline-offset: 1px;
+}
+
+.choice .hint {
+  display: block;
+  font-weight: 400;
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+
+.choice.invalid {
+  border-color: var(--bad);
+}
+
+.sev-choice {
+  align-items: flex-start;
+}
+
+.sev-choice .dot {
+  flex: 0 0 auto;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 4px;
+}

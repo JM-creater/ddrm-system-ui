@@ -1,0 +1,26 @@
+.stat-table td.num,
+.stat-table th.num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.reject {
+  color: var(--bad);
+  font-weight: 700;
+}
+
+.accept {
+  color: var(--muted);
+}
+
+.rev-mark {
+  font-size: 0.62rem;
+  font-weight: 700;
+  color: var(--muted);
+  background: #eef1f5;
+  border-radius: 4px;
+  padding: 0 4px;
+  margin-left: 4px;
+  white-space: nowrap;
+}

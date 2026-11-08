@@ -1,0 +1,39 @@
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.toolbar .form-control,
+.toolbar .form-select {
+  background-color: #fff;
+  border-color: var(--line);
+  border-radius: 6px;
+  min-height: 34px;
+}
+
+.toolbar .search {
+  position: relative;
+  flex: 1 1 240px;
+  min-width: 200px;
+}
+
+.toolbar .search svg {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9aa5b4;
+  pointer-events: none;
+}
+
+.toolbar .search input {
+  padding-left: 32px;
+}
+
+.toolbar .form-select {
+  width: auto;
+  min-width: 150px;
+}

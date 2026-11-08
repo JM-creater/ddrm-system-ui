@@ -1,0 +1,14 @@
+.notfound {
+  max-width: 480px;
+  margin: 12vh auto;
+  padding: 16px;
+  text-align: center;
+}
+
+.notfound .code {
+  font-size: 3.6rem;
+  font-weight: 800;
+  color: #c9d4e3;
+  line-height: 1;
+  margin: 14px 0 6px;
+}

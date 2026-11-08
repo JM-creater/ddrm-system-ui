@@ -1,0 +1,29 @@
+.whoami {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #1f4e8c;
+  padding-top: 6px;
+}
+
+.level-pill {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.64rem;
+  font-weight: 700;
+}
+
+.level-pill.good {
+  background: #e0f4e8;
+  color: #2f855a;
+}
+
+.level-pill.fair {
+  background: #fdebd7;
+  color: #c05621;
+}
+
+.level-pill.poor {
+  background: #fde4e4;
+  color: #c53030;
+}

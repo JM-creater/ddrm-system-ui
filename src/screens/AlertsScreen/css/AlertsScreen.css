@@ -1,0 +1,21 @@
+.lvl-ADVISORY {
+  background: #2c6fb7;
+}
+.lvl-YELLOW {
+  background: #e6c229;
+}
+.lvl-ORANGE {
+  background: #e8a33a;
+}
+.lvl-RED {
+  background: #dc3b3b;
+}
+
+.lvl-chip {
+  flex: 0 0 auto;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  margin-top: 3px;
+  display: inline-block;
+}

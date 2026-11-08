@@ -1,0 +1,71 @@
+.likert th.sc,
+.likert td.sc {
+  width: 60px;
+  text-align: center;
+}
+
+.likert td.no {
+  width: 40px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.likert td.stmt {
+  font-size: 0.8rem;
+}
+
+.likert tr.unanswered td.stmt {
+  box-shadow: inset 3px 0 0 #e8a33a;
+}
+
+.likert .form-check-input {
+  width: 1.05rem;
+  height: 1.05rem;
+  float: none;
+  margin: 0;
+  cursor: pointer;
+}
+
+.likert-key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 18px;
+  font-size: 0.72rem;
+  color: var(--ink-2);
+  margin-bottom: 12px;
+}
+
+.likert-key b {
+  color: var(--blue);
+}
+
+.radio-inline-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 18px;
+}
+
+.progress-line {
+  height: 6px;
+  background: #e6ebf2;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-line > span {
+  display: block;
+  height: 100%;
+  background: var(--blue);
+  transition: width 0.3s;
+}
+
+.sticky-bar {
+  position: sticky;
+  bottom: 0;
+  z-index: 5;
+  margin-top: 14px;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.97);
+  border-radius: 12px;
+  box-shadow: 0 -2px 12px rgba(16, 42, 82, 0.08);
+}

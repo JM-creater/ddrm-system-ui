@@ -1,0 +1,21 @@
+.filters {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.filters .form-control,
+.filters .form-select {
+  background-color: #fff;
+  border-color: var(--line);
+  border-radius: 6px;
+  min-height: 34px;
+}
+
+.report-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+  transition: opacity 0.2s;
+}

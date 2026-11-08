@@ -1,0 +1,16 @@
+/* Logo styles */
+.logo-tile {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  background: #f2a12a;
+  border-radius: 9px;
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.12);
+}
+
+.logo-tile svg {
+  width: 62%;
+  height: 62%;
+  display: block;
+}

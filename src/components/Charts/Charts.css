@@ -1,0 +1,161 @@
+/* Charts styles */
+.vbars {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 16px 8px 4px;
+  min-height: 170px;
+}
+
+.vbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0;
+  max-width: 88px;
+  min-width: 0;
+}
+
+.vbar .col {
+  position: relative;
+  flex: 0 0 120px;
+  width: 100%;
+  max-width: none;
+  height: 120px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.vbar .fill {
+  display: block;
+  width: 100%;
+  border-radius: 2px 2px 0 0;
+  min-height: 0;
+  transition: height 0.4s ease;
+}
+
+.vbar .num {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 0.66rem;
+  color: rgba(28, 39, 51, 0.55);
+}
+
+.vbar .lab {
+  margin-top: 6px;
+  font-size: 0.69rem;
+  color: var(--ink-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.hbars {
+  display: grid;
+  gap: 8px;
+}
+
+.hbar {
+  display: grid;
+  grid-template-columns: 110px 1fr 36px;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.75rem;
+}
+
+.hbar .lab {
+  color: var(--ink-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hbar .num,
+.domain-row .num {
+  text-align: right;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.track {
+  display: block;
+  height: 10px;
+  background: #e8edf5;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.track .fill {
+  height: 100%;
+  border-radius: 6px;
+  background: var(--chart-blue);
+  transition: width 0.4s ease;
+}
+
+.stackbar {
+  display: flex;
+  height: 14px;
+  background: #e8edf5;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.stackbar > span {
+  display: block;
+  height: 100%;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin-top: 10px;
+  font-size: 0.72rem;
+  color: var(--ink-2);
+}
+
+.legend > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.legend i {
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.domain-row {
+  display: grid;
+  grid-template-columns: minmax(120px, 1.3fr) 2fr 44px;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.75rem;
+  padding: 5px 0;
+}
+
+.gauge,
+.donut-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.donut-box {
+  min-height: 210px;
+}
+
+.donut .big {
+  fill: var(--ink);
+  font-weight: 700;
+}

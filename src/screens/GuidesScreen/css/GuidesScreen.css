@@ -1,0 +1,96 @@
+.guide-list .accordion-item {
+  background: #fff;
+  border: 0;
+  border-radius: 10px !important;
+  box-shadow: var(--shadow);
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.guide-list .accordion-button {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--ink);
+  background: #fff;
+  padding: 14px 16px;
+  box-shadow: none;
+  border-radius: 10px !important;
+}
+
+.guide-list .accordion-button:not(.collapsed) {
+  color: var(--ink);
+  background: #fff;
+  box-shadow: none;
+}
+
+.guide-list .accordion-button:focus-visible {
+  box-shadow: inset 0 0 0 2px rgba(17, 92, 165, 0.35);
+}
+
+.guide-list .accordion-button::after {
+  content: '▼';
+  background-image: none;
+  transform: none;
+  width: auto;
+  height: auto;
+  font-size: 0.6rem;
+  color: var(--muted);
+}
+
+.guide-list .accordion-button:not(.collapsed)::after {
+  background-image: none;
+  transform: none;
+}
+
+.guide-list .accordion-body {
+  padding: 4px 16px 16px;
+  font-size: 0.8rem;
+}
+
+.hz-ico {
+  margin-right: 8px;
+}
+
+.accordion-button .hz {
+  font-weight: 700;
+}
+
+.guide-cols {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.guide-cols h4 {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding-bottom: 5px;
+  margin-bottom: 8px;
+  border-bottom: 2px solid;
+}
+
+.guide-cols .before h4 {
+  color: #1559a6;
+  border-color: #1559a6;
+}
+
+.guide-cols .during h4 {
+  color: #d9822b;
+  border-color: #d9822b;
+}
+
+.guide-cols .after h4 {
+  color: #2f9e5b;
+  border-color: #2f9e5b;
+}
+
+.guide-cols ol {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.guide-cols li {
+  margin-bottom: 5px;
+}
